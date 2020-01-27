@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RF_Module)(type Legacy)(uri /home/kunyi/HW_LoRaNode/LoRaNode/RF_Module.lib)(options "")(descr ""))
+)
