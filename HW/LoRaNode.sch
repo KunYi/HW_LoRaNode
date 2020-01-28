@@ -14,36 +14,292 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32L0:STM32L071CBTx U?
+L MCU_ST_STM32L0:STM32L071CBTx U1
 U 1 1 5E2EDDDE
 P 3400 3700
-F 0 "U?" H 3350 2111 50  0000 C CNN
-F 1 "STM32L071CBTx" H 3350 2020 50  0000 C CNN
+F 0 "U1" H 2850 5150 50  0000 C CNN
+F 1 "STM32L071CBTx" H 3350 3650 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 2800 2300 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141136.pdf" H 3400 3700 50  0001 C CNN
 	1    3400 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_UART:MAX3483 U?
+L Interface_UART:MAX3483 U3
 U 1 1 5E2F03A7
 P 6200 2400
-F 0 "U?" H 6200 3081 50  0000 C CNN
+F 0 "U3" H 6200 3081 50  0000 C CNN
 F 1 "MAX3483" H 6200 2990 50  0000 C CNN
-F 2 "" H 6200 1700 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6200 1700 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 6200 2450 50  0001 C CNN
 	1    6200 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L RF_Module:E22-900M22S U?
+L RF_Module:E22-900M22S U2
 U 1 1 5E2FFE8A
-P 6150 4300
-F 0 "U?" H 6150 5131 50  0000 C CNN
-F 1 "E22-900M22S" H 6150 5040 50  0000 C CNN
-F 2 "RF_Module:EBYTE-E22-XXXM22S" H 6150 3200 50  0001 C CNN
-F 3 "http://www.ebyte.com/en/downpdf.aspx?id=437" H 5900 4750 50  0001 C CNN
-	1    6150 4300
+P 8500 5000
+F 0 "U2" H 8150 5600 50  0000 C CNN
+F 1 "E22-900M22S" H 8850 5600 50  0000 C CNN
+F 2 "RF_Module:EBYTE-E22-XXXM22S" H 8500 3900 50  0001 C CNN
+F 3 "http://www.ebyte.com/en/downpdf.aspx?id=437" H 8250 5450 50  0001 C CNN
+	1    8500 5000
 	1    0    0    -1  
 $EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 5E301F74
+P 4500 2500
+F 0 "C1" H 4678 2546 50  0000 L CNN
+F 1 "100nF" H 4678 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4500 2500 50  0001 C CNN
+F 3 "~" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C5
+U 1 1 5E3070CC
+P 5600 1750
+F 0 "C5" H 5778 1796 50  0000 L CNN
+F 1 "100nF" H 5778 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5600 1750 50  0001 C CNN
+F 3 "~" H 5600 1750 50  0001 C CNN
+	1    5600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C3
+U 1 1 5E30AB92
+P 9350 4150
+F 0 "C3" H 9528 4196 50  0000 L CNN
+F 1 "100nF" H 9528 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9350 4150 50  0001 C CNN
+F 3 "~" H 9350 4150 50  0001 C CNN
+	1    9350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C4
+U 1 1 5E30B4A4
+P 9900 4150
+F 0 "C4" H 10078 4196 50  0000 L CNN
+F 1 "4u7" H 10078 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9900 4150 50  0001 C CNN
+F 3 "~" H 9900 4150 50  0001 C CNN
+	1    9900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J1
+U 1 1 5E30DD81
+P 1250 6550
+F 0 "J1" H 950 7100 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 2250 6000 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1250 6550 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 900 5300 50  0001 C CNN
+	1    1250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C2
+U 1 1 5E311B14
+P 1450 2650
+F 0 "C2" H 1628 2696 50  0000 L CNN
+F 1 "100nF" H 1628 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1450 2650 50  0001 C CNN
+F 3 "~" H 1450 2650 50  0001 C CNN
+	1    1450 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2400 1450 2400
+$Comp
+L power:GND #PWR0101
+U 1 1 5E318734
+P 1450 2900
+F 0 "#PWR0101" H 1450 2650 50  0001 C CNN
+F 1 "GND" H 1455 2727 50  0000 C CNN
+F 2 "" H 1450 2900 50  0001 C CNN
+F 3 "" H 1450 2900 50  0001 C CNN
+	1    1450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E31ADA8
+P 3300 5450
+F 0 "#PWR0102" H 3300 5200 50  0001 C CNN
+F 1 "GND" H 3305 5277 50  0000 C CNN
+F 2 "" H 3300 5450 50  0001 C CNN
+F 3 "" H 3300 5450 50  0001 C CNN
+	1    3300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5200 3200 5350
+Wire Wire Line
+	3200 5350 3300 5350
+Wire Wire Line
+	3400 5350 3400 5200
+Wire Wire Line
+	3300 5200 3300 5350
+Connection ~ 3300 5350
+Wire Wire Line
+	3300 5350 3400 5350
+Wire Wire Line
+	3300 5450 3300 5350
+Wire Wire Line
+	3500 5200 3500 5350
+Wire Wire Line
+	3500 5350 3400 5350
+Connection ~ 3400 5350
+$Comp
+L Device:R R1
+U 1 1 5E325CC9
+P 2100 6250
+F 0 "R1" V 2050 6100 50  0000 C CNN
+F 1 "0" V 2150 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 6250 50  0001 C CNN
+F 3 "~" H 2100 6250 50  0001 C CNN
+	1    2100 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 6250 1750 6250
+Text Label 2450 6250 0    50   ~ 0
+NRST
+Wire Wire Line
+	2250 6250 3000 6250
+$Comp
+L Device:R R2
+U 1 1 5E32A806
+P 2100 6450
+F 0 "R2" V 2050 6300 50  0000 C CNN
+F 1 "0" V 2150 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 6450 50  0001 C CNN
+F 3 "~" H 2100 6450 50  0001 C CNN
+	1    2100 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 6450 1950 6450
+Wire Wire Line
+	2250 6450 3000 6450
+Text Label 2500 6450 0    50   ~ 0
+SWDCLK
+$Comp
+L Device:R R3
+U 1 1 5E32CC9B
+P 2500 6550
+F 0 "R3" V 2450 6400 50  0000 C CNN
+F 1 "0" V 2550 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2430 6550 50  0001 C CNN
+F 3 "~" H 2500 6550 50  0001 C CNN
+	1    2500 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 6550 1750 6550
+Wire Wire Line
+	2650 6550 3000 6550
+Text Label 2700 6550 0    50   ~ 0
+SWDIO
+NoConn ~ 1750 6650
+NoConn ~ 1750 6750
+NoConn ~ 1750 2700
+Wire Wire Line
+	4000 4800 4300 4800
+Wire Wire Line
+	4000 4900 4300 4900
+Text Label 4050 4900 0    50   ~ 0
+SWDCLK
+Text Label 4050 4800 0    50   ~ 0
+SWDIO
+Wire Wire Line
+	4000 3900 4550 3900
+Text Label 4100 3900 0    50   ~ 0
+SPI1_NSS
+Text Label 4100 4000 0    50   ~ 0
+SPI1_CLK
+Wire Wire Line
+	4000 4000 4550 4000
+Wire Wire Line
+	4000 4100 4550 4100
+Text Label 4100 4100 0    50   ~ 0
+SPI1_MISO
+Wire Wire Line
+	4000 4200 4550 4200
+Text Label 4100 4200 0    50   ~ 0
+SPI1_MOSI
+Wire Wire Line
+	8000 5300 7500 5300
+Wire Wire Line
+	8000 5200 7500 5200
+Wire Wire Line
+	8000 5100 7500 5100
+Wire Wire Line
+	8000 5000 7500 5000
+Text Label 7500 5300 0    50   ~ 0
+SPI1_NSS
+Text Label 7500 5200 0    50   ~ 0
+SPI1_SCLK
+Text Label 7500 5100 0    50   ~ 0
+SPI1_MOSI
+Text Label 7500 5000 0    50   ~ 0
+SPI1_MISO
+$Comp
+L power:GND #PWR0103
+U 1 1 5E356B94
+P 8500 5850
+F 0 "#PWR0103" H 8500 5600 50  0001 C CNN
+F 1 "GND" H 8505 5677 50  0000 C CNN
+F 2 "" H 8500 5850 50  0001 C CNN
+F 3 "" H 8500 5850 50  0001 C CNN
+	1    8500 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5650 8150 5800
+Wire Wire Line
+	8150 5800 8250 5800
+Wire Wire Line
+	8850 5800 8850 5650
+Wire Wire Line
+	8250 5650 8250 5800
+Connection ~ 8250 5800
+Wire Wire Line
+	8250 5800 8350 5800
+Wire Wire Line
+	8350 5650 8350 5800
+Connection ~ 8350 5800
+Wire Wire Line
+	8350 5800 8450 5800
+Wire Wire Line
+	8450 5650 8450 5800
+Connection ~ 8450 5800
+Wire Wire Line
+	8450 5800 8500 5800
+Wire Wire Line
+	8550 5800 8550 5650
+Connection ~ 8550 5800
+Wire Wire Line
+	8550 5800 8650 5800
+Wire Wire Line
+	8650 5650 8650 5800
+Connection ~ 8650 5800
+Wire Wire Line
+	8650 5800 8750 5800
+Wire Wire Line
+	8750 5650 8750 5800
+Connection ~ 8750 5800
+Wire Wire Line
+	8750 5800 8850 5800
+Wire Wire Line
+	8500 5850 8500 5800
+Connection ~ 8500 5800
+Wire Wire Line
+	8500 5800 8550 5800
+Text Label 2450 2400 0    50   ~ 0
+NRST
 $EndSCHEMATC
