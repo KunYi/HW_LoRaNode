@@ -8,7 +8,8 @@ Datasheets
 ### MCU
 * [STM32L071CB](stm32l071cb.pdf)
 ### Transceiver for RS485
-* [MAX3483](MAX3483-MAX3491.pdf)
+* [MAX3483](MAX3483-MAX3491.pdf) or
+* [SP3483](datasheets/sp3485.pdf)
 ### Battery
 * [EVE Battery ER34615](er34615_eve.pdf)
 
@@ -18,4 +19,5 @@ Datasheets
 [Chengdu Ebyte Electronic Technology Co.,Ltd](http://www.ebyte.com/)
 * STM32L071CB file download from [STMicroelectronics](https://www.st.com/en/microcontrollers-microprocessors/stm32l071cb.html)
 * MAX3483 file download from [Maxim Integrated](https://www.maximintegrated.com/en/products/interface/transceivers/MAX3483.html)
+* SP3483 file download from [MaxLinear Inc.](https://www.maxlinear.com/product/interface/serial-transceivers/rs485-422/sp3485)
 * ER34615 file download from [EVE Battery](http://www.evebattery.ru/hot_offers/53072)
