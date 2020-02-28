@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Interface_UART:MAX3483 U3
 U 1 1 5E2F03A7
-P 6200 2400
-F 0 "U3" H 6200 3081 50  0000 C CNN
-F 1 "MAX3483" H 6200 2990 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6200 1700 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 6200 2450 50  0001 C CNN
-	1    6200 2400
+P 8600 2200
+F 0 "U3" H 8600 2881 50  0000 C CNN
+F 1 "MAX3483" H 8600 2790 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 8600 1500 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 8600 2250 50  0001 C CNN
+	1    8600 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -465,12 +465,12 @@ $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5E497E20
-P 5600 1800
-F 0 "C5" H 5692 1846 50  0000 L CNN
-F 1 "100nF" H 5692 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5600 1800 50  0001 C CNN
-F 3 "~" H 5600 1800 50  0001 C CNN
-	1    5600 1800
+P 8000 1600
+F 0 "C5" H 8092 1646 50  0000 L CNN
+F 1 "100nF" H 8092 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8000 1600 50  0001 C CNN
+F 3 "~" H 8000 1600 50  0001 C CNN
+	1    8000 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -484,4 +484,20 @@ F 3 "~" H 9350 4150 50  0001 C CNN
 	1    9350 4150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8200 2100 7650 2100
+Wire Wire Line
+	8200 2400 7650 2400
+Text Label 7650 2400 0    50   ~ 0
+USART1_TX
+Text Label 7650 2100 0    50   ~ 0
+USART1_RX
+Wire Wire Line
+	4000 3700 4500 3700
+Wire Wire Line
+	4000 3800 4500 3800
+Text Label 4500 3800 2    50   ~ 0
+LPUART1_RX
+Text Label 4500 3700 2    50   ~ 0
+LPUART1_TX
 $EndSCHEMATC
